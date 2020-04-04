@@ -60,6 +60,9 @@ declare namespace LeaderLine {
     dash?: boolean | DashOptions;
     gradient?: boolean | GradientOptions;
     dropShadow?: boolean | DropShadowOptions;
+
+    show?: boolean;
+    hide?: boolean;
   }
 
   export interface DashOptions {
@@ -177,6 +180,7 @@ declare class LeaderLine {
   static pointAnchor(element: LeaderLine.Element, options?: LeaderLine.PointAnchorOptions): LeaderLine.AnchorAttachment;
 
   static areaAnchor(options: LeaderLine.AreaAnchorOptions): LeaderLine.AnchorAttachment;
+  static areaAnchor(element: LeaderLine.Element, options?: LeaderLine.AreaAnchorOptions): LeaderLine.AnchorAttachment;
   static areaAnchor(element: LeaderLine.Element, shape?: LeaderLine.AreaAnchorShape, options?: LeaderLine.AreaAnchorOptions): LeaderLine.AnchorAttachment;
 
   static mouseHoverAnchor(options: LeaderLine.MouseHoverAnchorOptions): LeaderLine.AnchorAttachment;

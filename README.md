@@ -8,7 +8,7 @@ This project is typescript definitions for [leader-line].
 npm install --save-dev leader-line-types
 ```
 
-### Warning
+then add `node_modules/leader-line-types` to `compilerOptions..typeRoots` in `tsconfig.json`.
 
 
 [leader-line]: https://github.com/anseki/leader-line
